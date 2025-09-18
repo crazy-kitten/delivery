@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
     <title>Delivery Food</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                 </a>
                 <div class="header-controls">
                     <button class="btn btn-primary"><img src="./images/icons/user.png" alt="user">Войти</button>
-                    <button class="btn btn-outline"><img src="./images/icons/shopping-cart.png" alt="shopping-cart">Корзина
+                    <button class="btn btn-outline" id="cart-button"><img src="./images/icons/shopping-cart.png" alt="shopping-cart">Корзина
                     </button>
                 </div>
             </div>
@@ -45,7 +46,7 @@
                     <h3 class="products-header--title">Рестораны</h3>
                     <input type="text" class="product-header--search" placeholder="Поиск блюд и ресторанов">
                 </div>
-                <div class="products-wrapper">
+                <div class="products-wrapper" id="rests-container">
                     <a href="./goods.html" class="products-card">
                         <div class="products-cars__image">
                             <img src="./images/rests/image.jpg" alt="rest-1">
